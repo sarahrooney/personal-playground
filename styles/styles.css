@@ -27,13 +27,13 @@ canvas{display:inline-block}template{display:none}[hidden]{display:none}
 /*----- WELCOME -----*/
 
 body{
-  background: #ffc0df; /* For browsers that do not support gradients */
-  background-image: url('http://img67.laughinggif.com/pic/HTTP2ltYWdlczIuZmFucG9wLmNvbS9pbWFnZS9waG90b3MvOTUwMDAwMC9TcGFya2xpbmctU3RhcnMtc3BhY2UtOTU1NjkzNC0zMDQtMjM0LmdpZgloglog.gif');
-  background-repeat: repeat;
-/*  background: -webkit-linear-gradient(#fff, #ffc0df);*/ /* For Safari 5.1 to 6.0 */
-/*  background: -o-linear-gradient(#fff, #ffc0df);*/ /* For Opera 11.1 to 12.0 */
-  /*background: -moz-linear-gradient(#fff, #ffc0df);*/ /* For Firefox 3.6 to 15 */
-  /*background: linear-gradient(#fff, #ffc0df);*/ /* Standard syntax */
+  background: #0d1991; /* For browsers that do not support gradients */
+  /*background-image: url('http://img67.laughinggif.com/pic/HTTP2ltYWdlczIuZmFucG9wLmNvbS9pbWFnZS9waG90b3MvOTUwMDAwMC9TcGFya2xpbmctU3RhcnMtc3BhY2UtOTU1NjkzNC0zMDQtMjM0LmdpZgloglog.gif');*/
+  /*background-repeat: repeat;*/
+  background: -webkit-linear-gradient(#29114d, #0d1991); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#29114d, #0d1991); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#29114d, #0d1991); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#29114d, #0d1991); /* Standard syntax */
 }
 
 .welcome-wrapper{
@@ -41,16 +41,18 @@ body{
   margin: 0 auto;
 
   max-width: 1240px;
+  min-width: 1222px;
   height: 100vh;
 
   text-align: center;
 }
 
-.daisy{
+.desktop{
   display: inline-block;
   position: absolute;
   top: 370px;
-  left: 50%;
+  left: 47%;
+  z-index: 2;
   margin-top: -350px; /* Half the height */
   margin-left: -502px;
 
@@ -72,10 +74,28 @@ body{
   }
 }
 
+.sparkling-stars{
+  position: absolute;
+  top: 95px;
+  left: 505px;
+
+  background-image: url('../images/index/sparkling-stars.gif');
+  background-repeat: repeat;
+
+  height: 368px;
+  width: 380px;
+
+  z-index: 0;
+
+  -webkit-clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0 93%);
+  clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 93%);
+}
+
 .welcome-msg{
   position: relative;
   display: inline-block;
-  top: 380px;
+  top: 500px;
+  left: 250px;
 
   color: #ffc0df;
   font-family: 'Helvetica', 'Arial', sans-serif;
@@ -96,6 +116,7 @@ body{
   position: absolute;
   bottom: 0;
   left: 0;
+  padding: 10px;
 }
 
 
