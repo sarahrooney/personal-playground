@@ -9,10 +9,22 @@ loadGradient();
 var windowHeight = window.innerHeight;
 var windowWidth = window.innerWidth;
 
-function rainGifs(){
-  var flowerRain = document.querySelector('flower');
-  flowerRain.style.position = "absolute";
-  flowerRain.style.left = 200 + "px";
+
+var enterLink = document.querySelector('.welcome-msg');
+var computerFace = document.querySelector('.welcome-wrapper__face');
+
+enterLink.addEventListener("mouseenter", function(){
+  computerFace.style.animation = 'flicker 2s'
+  setTimeout(function(){
+    computerFace.style.opacity = 1;
+  }, 1800);
+});
+
+function turnCompOff(){
+  enterLink.addEventListener("mouseout", function(){
+    computerFace.style.animation = 'none';
+    computerFace.style.opacity = 0;
+  });
 }
 
-rainGifs();
+turnCompOff();
