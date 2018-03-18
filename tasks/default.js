@@ -1,3 +1,3 @@
 import gulp from 'gulp';
 
-gulp.task('default', ['styles', 'scripts', 'watch']);
+gulp.task('default', ['styles', 'watch']);
