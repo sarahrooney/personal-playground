@@ -1,0 +1,109 @@
+/*-------------------------------------------------------------------------*/
+/*----- WELCOME -----*/
+
+.welcome-wrapper
+  position absolute
+  margin 0 auto
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 350px;
+  height: 350px;
+
+.welcome-wrapper__face{
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+
+  top: 52%;
+  left: 18%;
+
+  opacity: 0;
+
+  transition: opacity .3s;
+}
+
+@keyframes flicker {
+  0% {opacity:0;}
+  9% {opacity:0;}
+  10% {opacity:.5;}
+  13% {opacity:0;}
+  20% {opacity:.7;}
+  30% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.welcome-wrapper__desktop{
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+
+  top: 0;
+  left: 0;
+
+  background-color: #C9D6FF;
+  background: -webkit-linear-gradient(#faebd7, #C9D6FF); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#faebd7, #C9D6FF); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#faebd7, #C9D6FF); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#faebd7, #C9D6FF); /* Standard syntax */
+}
+
+.welcome-wrapper__border{
+  position: absolute;
+
+  z-index: 2;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 300px;
+  height: 300px;
+
+  border-style: solid;
+  border-width: 63px 62px;
+  -moz-border-image: url(../images/index/heartjar-border.gif) 79 72 repeat;
+  -webkit-border-image: url(../images/index/heartjar-border.gif) 79 72 repeat;
+  -o-border-image: url(../images/index/heartjar-border.gif) 79 72 repeat;
+  border-image: url(../images/index/heartjar-border.gif) 79 72 repeat;
+}
+
+.welcome-msg{
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  top: 110%;
+  left: 68%;
+
+  color: #f7498e;
+  font-family: 'MarkPro-Bold-Italic', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.5em;
+  text-shadow:0.05em 0.05em 0.1em #00a2e0, 0 0 0.2em #ffff00;
+
+  text-decoration: none;
+  font-size: 30px;
+
+  vertical-align: middle;
+}
+
+.decoration{
+  position: absolute;
+  top: 350px;
+  left: 500px;
+  z-index: 1;
+
+  transform: rotate(0.03turn);
+}
+
+.flower{
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+}
+
+
+
