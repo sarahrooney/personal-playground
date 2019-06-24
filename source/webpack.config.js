@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+var MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   entry: [
@@ -106,6 +107,10 @@ if (process.env.NODE_ENV === 'production') {
     }),
     new webpack.LoaderOptionsPlugin({
       minimize: true
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].[hash].css',
+      allChunks: true
     })
   ])
 }
