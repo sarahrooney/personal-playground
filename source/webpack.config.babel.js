@@ -124,7 +124,7 @@ module.exports = {
       exclude: /favicons/,
       loader: 'file-loader',
       options: {
-        name: 'img/[name].[ext]',
+        name: 'images/[name].[ext]',
         publicPath: (isProduction) ? '' : '/'
       }
     },
@@ -133,7 +133,7 @@ module.exports = {
       include: /favicons/,
       loader: 'file-loader',
       options: {
-        name: 'img/favicons/[name].[ext]'
+        name: 'images/favicons/[name].[ext]'
       }
     },
     {
