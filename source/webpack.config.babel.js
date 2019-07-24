@@ -269,63 +269,6 @@ switch (process.env.NODE_ENV) {
     );
     break;
 
-  case 'staging':
-    module.exports.plugins.push(
-      new CleanWebpackPlugin('dist', { exclude: ['.gitkeep'] }),
-      new CopyWebpackPlugin([
-        {
-          from: path.join(__dirname, 'src/assets/images'),
-          to: path.join(__dirname, 'dist/images'),
-          ignore: [ '.DS_Store' ],
-          debug: 'info'
-        },
-        {
-          from: path.join(__dirname, 'src/assets/video'),
-          to: path.join(__dirname, 'dist/video'),
-          ignore: [ '.DS_Store' ],
-          debug: 'info'
-        }
-      ]),
-      new HtmlReplaceWebpackPlugin([
-        {
-          pattern: '<!--devFonts-->',
-          replacement: '<link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/c18535b4-d0fb-421e-8e32-f585f9d412c0.css">'
-        },
-        {
-          pattern: '<!--mediaPrefix-->',
-          replacement: '  \n<div id="mediaPrefix" data-prefix="' + process.env.MEDIA_PATH + '"></div>\n'
-        },
-      ]),
-      new ReplaceInFileWebpackPlugin(
-        [{
-          dir: 'dist/css',
-          test: [/\.css$/],
-          rules: [
-            {
-              search: /url\(..\//ig,
-              replace: "url(" + process.env.MEDIA_PATH
-            },
-            {
-              search: /#app #app/ig,
-              replace: "#app"
-            },
-            {
-              search: /#app body/ig,
-              replace: "#app"
-            },
-            {
-              search: /#app html/ig,
-              replace: "#app"
-            },
-            {
-              search: /#app :root/ig,
-              replace: "#app:root"
-            }
-          ]
-      }])
-    );
-    break;
-
   default:
     module.exports.plugins.push(
       new HtmlReplaceWebpackPlugin([
