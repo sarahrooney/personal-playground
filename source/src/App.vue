@@ -3,7 +3,7 @@
 
     <div class="home">
       <div class="home__bubbles">
-        <sequential-entrance animation="fadeIn" delay="1600">
+        <sequential-entrance animation="fadeIn" delay="1800">
           <div class="home__bubble" v-for="(item, index) in messages" :key="index">
             <div class="home__bubble__tail"
               v-bind:class="item.last ? 'home__bubble__tail--active' : 'home__bubble__tail--inactive'"
