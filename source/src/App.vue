@@ -26,7 +26,7 @@ export default {
     return {
       messages: [
         {
-          msg: "hi! my name is Sarah Rooney. i'm a front-end developer and artist currently living and working in Chicago."
+          msg: "hi! i'm a front-end developer and artist currently living and working in Chicago, IL ^___^"
         },
         {
           msg: "i've been reworking my site for a while now, sorry about that! in the meantime, check out my most recent work with the Media Archaeology Lab <a href='https://mediaarchaeologylab.com/blog/soft-computers-crochet-patterns-by-sarah-rooney/' target='_blank'>here</a>."
