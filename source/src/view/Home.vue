@@ -6,13 +6,7 @@
 
       <div class="message">
         <p>
-          <router-link to="/">Home</router-link>
-          <router-link to="/about">About</router-link>
-        </p>
-      </div>
-      <div class="message">
-        <p>
-          hi! i'm sarah rooney, a front-end developer and artist currently living and working in Chicago, IL ^___^
+          hi! i'm sarah rooney, a front-end developer and artist living and working in Chicago, IL.
         </p>
       </div>
       <div class="message">
@@ -22,12 +16,21 @@
       </div>
       <div class="message">
         <p>
-          my CV is available <a href="https://docs.google.com/document/d/1xBTE-XqEK6XkJDirgz8oyHLrDkxgKjRqUS8ZSMpZAf8/edit?usp=sharing" target="_blank">here</a> and you can shoot me an email <a href="mailto:rooney.sarah2@gmail.com">here</a>.
+          my CV is available <a href="https://docs.google.com/document/d/1xBTE-XqEK6XkJDirgz8oyHLrDkxgKjRqUS8ZSMpZAf8/edit?usp=sharing" target="_blank">here</a> and you can email me <a href="mailto:rooney.sarah2@gmail.com">here</a>.
         </p>
       </div>
+      <div class="message">
+        <p>°˖✧◝(⁰▿⁰)◜✧˖°</p>
+      </div>
+      <!-- <div class="message message--right">
+        <p>
+          <router-link to="/about">About</router-link>
+        </p>
+      </div> -->
 
     </div>
-    <div class="home-button"></div>
+    <!-- <div class="home-button"></div> -->
+    <router-link to="/" class="home-button"></router-link>
   </div>
 </template>
 
