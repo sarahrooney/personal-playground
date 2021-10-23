@@ -1,5 +1,9 @@
 body {
   margin: 0;
+  padding: 0;
+
+  background-image: url('./../images/starry_sky.jpg');
+  background-color: rgba(0, 155, 255, 0.3);
 }
 
 #app {
@@ -19,10 +23,7 @@ li {
 }
 
 // Mixins
+@import 'mixins/variables';
 
-// Config
-
-// Components
-
-// Pages
-@import 'pages/home';
+// Views
+@import 'views/home';

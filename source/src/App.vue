@@ -1,9 +1,7 @@
 <template>
   <div id="main" class="main">
-    <h1>Hello World</h1>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
+    <!-- <h1>Hello World</h1>
+    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <router-view />
   </div>
 </template>
