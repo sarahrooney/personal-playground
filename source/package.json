@@ -7,7 +7,7 @@
     "private": true,
     "scripts": {
         "start": "parcel serve index.html",
-        "build": "parcel build index.html --public-url ./"
+        "build": "parcel build index.html"
     },
     "dependencies": {
         "vue": "^3.0.0",
