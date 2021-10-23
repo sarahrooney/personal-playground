@@ -7,7 +7,7 @@
     "private": true,
     "scripts": {
         "start": "parcel serve index.html",
-        "build": "CI= npm run build"
+        "build": "parcel build index.html --public-url ./"
     },
     "dependencies": {
         "vue": "^3.0.0",
