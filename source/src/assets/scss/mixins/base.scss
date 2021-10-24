@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background-image: url('./../images/starry_sky.jpg');
+  background-color: rgba(0, 155, 255, 0.3);
+}
+
+#app {
+  font-size: 16px;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0;
+}
+
+a {
+  transition: color .4s ease, background-color .4s ease;
+}
