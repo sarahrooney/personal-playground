@@ -12,6 +12,7 @@
           <video muted="muted" preload="none" loop="loop" autoplay="autoplay" poster="../assets/images/dev/apollo_1.jpg">
             <source src="../assets/media/apollo1.mp4" type="video/mp4">
           </video>
+          <span>design by the talented folks at Clique Studios</span>
         </div>
 
         <div class="dev__item">
@@ -24,9 +25,10 @@
           </video>
           <img src="../assets/images/dev/r1_2.jpg" alt="screenshot of Patagonia's Done in an R1 site">
           <img src="../assets/images/dev/r1_1.jpg" alt="screenshot of Patagonia's Done in an R1 site">
-          <video muted="muted" preload="none" loop="loop" autoplay="autoplay">
+          <video muted="muted" preload="none" loop="loop" autoplay="autoplay" poster="../assets/images/dev/r1_poster2.jpg">
             <source src="../assets/media/doneinanr1_2.mp4" type="video/mp4">
           </video>
+          <span>design by the talented folks at Someoddpilot</span>
         </div>
       </div>
     </div>
