@@ -1,0 +1,89 @@
+.dev {
+  padding-bottom: 143px;
+
+  &__cntnt {
+    position: relative;
+
+    width: 90%;
+    max-width: 800px;
+
+    padding: 24px;
+    border-radius: 5px;
+    margin: 40px auto 24px;
+
+    background-color: white;
+    border: 3px solid aliceblue;
+    box-sizing: border-box;
+
+    .txt {
+      margin: 0 auto;
+
+      > *:first-child {
+        margin-top: 0;
+      }
+
+      h1 {
+        color: dodgerblue;
+      }
+
+      p {
+        margin: 16px 0;
+      }
+    }
+  }
+
+  &__item {
+    font-family: monospace;
+    margin-bottom: 40px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      margin: 16px 0;
+    }
+
+    img {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      margin: 16px 0;
+
+      &.half {
+        display: inline-block;
+        width: 48%;
+
+        &--left {
+          margin-top: 8px;
+          margin-bottom: 8px;
+          margin-right: 2%;
+        }
+
+        &--right {
+          margin-top: 8px;
+          margin-bottom: 8px;
+          margin-left: 2%;
+        }
+      }
+    }
+  }
+
+  &__title {
+    h2 {
+      color: dodgerblue !important;
+      margin-bottom: 0;
+    }
+
+    a {
+      color: dodgerblue;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

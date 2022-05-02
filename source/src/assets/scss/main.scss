@@ -2,5 +2,11 @@
 @import 'mixins/variables';
 @import 'mixins/base';
 
+// Components
+@import 'components/menu';
+
 // Views
 @import 'views/home';
+@import 'views/about';
+@import 'views/work';
+@import 'views/dev';

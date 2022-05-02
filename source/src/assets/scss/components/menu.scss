@@ -1,0 +1,78 @@
+.menu {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+
+	width: 90%;
+	margin: 0 auto;
+
+	.apps {
+		display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
+    &__btn {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 24%;
+
+      text-align: center;
+      text-decoration: none;
+
+      &:hover {
+        .icon {
+          color: dodgerblue;
+          background-color: $white;
+          border: 2px solid dodgerblue;
+
+          > span {
+            color: dodgerblue;
+          }
+        }
+      }
+
+      .icon {
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        border-radius: 5px;
+        border: 2px solid dodgerblue;
+        padding: 10px 2px;
+        font-size: 20px;
+        color: $white;
+        background-color: dodgerblue;
+        box-sizing: border-box;
+        transition: background 0.3s ease, color 0.3s ease;
+        box-shadow: 0px 0px 9px -2px rgba(34, 16, 16, 0.45);
+
+        &--work {
+          font-size: 22px;
+        }
+
+        &--about {
+          padding: 2px 2px;
+
+          > span {
+            color: $white;
+            font-size: 34px;
+
+            transition: color 0.3s ease;
+          }
+        }
+      }
+
+      > span:not(.icon) {
+        width: 100%;
+        padding-top: 2px;
+        color: dodgerblue;
+        font-family: monospace;
+        text-shadow: 1px 1px 20px rgba(200, 200, 255, 0.85);
+      }
+    }
+	}
+}
