@@ -7,7 +7,7 @@
     "private": true,
     "scripts": {
         "start": "parcel serve index.html",
-        "build": "parcel build index.html"
+        "build": "parcel build index.html && cp redirects.txt dist/_redirects"
     },
     "dependencies": {
         "vue": "^3.0.0",
