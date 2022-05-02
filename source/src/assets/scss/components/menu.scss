@@ -1,7 +1,11 @@
 .menu {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
 	display: flex;
 	justify-content: center;
-	position: relative;
+
 	width: 90%;
 	margin: 0 auto;
 
@@ -62,11 +66,12 @@
         }
       }
 
-      span {
+      > span:not(.icon) {
         width: 100%;
         padding-top: 2px;
         color: dodgerblue;
         font-family: monospace;
+        text-shadow: 1px 1px 20px rgba(200, 200, 255, 0.85);
       }
     }
 	}

@@ -9,6 +9,7 @@
   border-radius: 30px;
 
   @media (max-width: 430px) {
+    top: 50%;
     width: calc(100vw - 8px);
     height: auto;
     border: none;
@@ -197,6 +198,10 @@
 
     background-color: aliceblue;
 
+    @media (max-width: 430px) {
+      padding: 10px 0 4px
+    }
+
     &__btn {
       display: flex;
       flex-flow: row wrap;
@@ -250,11 +255,15 @@
         }
       }
 
-      span {
+      > span:not(.icon) {
         width: 100%;
         padding-top: 2px;
         color: dodgerblue;
         font-family: monospace;
+
+        @media (max-width: 430px) {
+          font-size: 14px;
+        }
       }
     }
   }

@@ -37,7 +37,8 @@ li {
 }
 
 p > a,
-span > a {
+span > a,
+a.inline-link {
   position: relative;
   color: dodgerblue;
   text-decoration: none;

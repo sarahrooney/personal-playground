@@ -1,4 +1,6 @@
 .about {
+  padding-bottom: 143px;
+
 	&__cntnt {
 		position: relative;
 
@@ -37,9 +39,17 @@
     	margin: 0 auto;
     	text-align: center;
 
+      @media (max-width: 694px) {
+        flex-flow: row wrap;
+      }
+
     	p {
     		margin-left: 16px;
     		margin-right: 16px;
+
+        @media (max-width: 694px) {
+          width: 100%;
+        }
     	}
     }
 	}
