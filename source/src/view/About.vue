@@ -13,7 +13,7 @@
       <div class="socials">
         <p>💌 rooney.sarah2@gmail.com</p>
         <p>🐦 <a href="//twitter.com/watercaress" target="_blank"><span>@watercaress</span></a></p>
-        <p>📸 <a href="//www.instagram.com/__little__apple/" target="_blank"><span>@__little__apple</span></a></p>
+        <p>📸 <a href="//www.instagram.com/watercaressed/" target="_blank"><span>@watercaressed</span></a></p>
       </div>
     </div>
 

@@ -9,9 +9,10 @@
             <a href="//www.apollotheater.org/" target="_blank"><h2>apollotheater.org</h2></a>
             <span>wordpress development</span>
           </div>
-          <video muted="muted" preload="none" loop="loop" autoplay="autoplay" poster="../assets/images/dev/apollo_1.jpg">
+          <!-- <video muted="muted" preload="none" loop="loop" autoplay="autoplay" poster="../assets/images/dev/apollo_1.jpg">
             <source src="../assets/media/apollo1.mp4" type="video/mp4">
-          </video>
+          </video> -->
+          <img src="../assets/images/dev/apollo_1.jpg" alt="screenshot of Apollo's homepage">
           <span>design by the talented folks at Clique Studios</span>
         </div>
 
@@ -20,14 +21,14 @@
             <h2>Done in an R1</h2>
             <span>A simple Vue application to promote Patagonia's R1 jacket (no longer live)</span>
           </div>
-          <video muted="muted" preload="none" loop="loop" autoplay="autoplay" poster="../assets/images/dev/r1_poster.jpg">
+          <!-- <video muted="muted" preload="none" loop="loop" autoplay="autoplay" poster="../assets/images/dev/r1_poster.jpg">
             <source src="../assets/media/toprecording.mp4" type="video/mp4">
-          </video>
+          </video> -->
           <img src="../assets/images/dev/r1_2.jpg" alt="screenshot of Patagonia's Done in an R1 site">
           <img src="../assets/images/dev/r1_1.jpg" alt="screenshot of Patagonia's Done in an R1 site">
-          <video muted="muted" preload="none" loop="loop" autoplay="autoplay" poster="../assets/images/dev/r1_poster2.jpg">
+          <!-- <video muted="muted" preload="none" loop="loop" autoplay="autoplay" poster="../assets/images/dev/r1_poster2.jpg">
             <source src="../assets/media/doneinanr1_2.mp4" type="video/mp4">
-          </video>
+          </video> -->
           <span>design by the talented folks at Someoddpilot</span>
         </div>
       </div>
