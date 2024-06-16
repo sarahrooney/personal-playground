@@ -3,9 +3,14 @@ body {
   padding: 0;
   background-image: url('./../images/starry_sky.jpg');
   background-color: rgba(0, 155, 255, 0.3);
+
+  * {
+    box-sizing: border-box;
+  }
 }
 
 #app {
+  color: $black;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;

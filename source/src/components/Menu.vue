@@ -1,10 +1,9 @@
 <template>
-  <div class="menu">
     <div class="apps">
-      <router-link to="/" class="apps__btn">
+      <!-- <router-link to="/" class="apps__btn">
         <span class="icon icon--home">°˖⤾</span>
         <span>Home</span>
-      </router-link>
+      </router-link> -->
       <router-link v-if="about" to="/about" class="apps__btn">
         <span class="icon icon--about"><span>✎</span> ̼</span>
         <span>About</span>
@@ -18,7 +17,6 @@
         <span>Web Dev</span>
       </router-link>
     </div>
-  </div>
 </template>
 
 <script>

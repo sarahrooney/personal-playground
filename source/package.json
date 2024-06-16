@@ -14,11 +14,11 @@
         "vue-router": "^4.0.12"
     },
     "devDependencies": {
-        "@parcel/transformer-sass": "^2.0.0",
-        "@parcel/transformer-vue": "^2.0.0",
+        "@parcel/transformer-sass": "^2.12.0",
+        "@parcel/transformer-vue": "^2.10.0",
         "@vue/compiler-sfc": "^3.0.0",
         "bootstrap": "^5.0.0-alpha1",
-        "parcel": "^2.0.0-nightly.420",
+        "parcel": "^2.12.0",
         "popper.js": "^1.16.1",
         "sass": "^1.27.0",
         "typescript": "~3.9.3"
