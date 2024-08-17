@@ -14,23 +14,9 @@
         <p>°˖✧◝(⁰▿⁰)◜✧˖°</p>
       </div>
 
-      <!-- <div class="apps">
-        <router-link to="/about" class="apps__btn">
-          <span class="icon icon--about"><span>✎</span> ̼</span>
-          <span>About</span>
-        </router-link>
-        <router-link to="/work" class="apps__btn">
-          <span class="icon icon--work">ʚ☻ɞ</span>
-          <span>Work</span>
-        </router-link>
-        <router-link to="/development" class="apps__btn">
-          <span class="icon icon--dev">꩜˖*</span>
-          <span>Web Dev</span>
-        </router-link>
-      </div> -->
-      <Menu v-bind:about="true" v-bind:work="true" v-bind:dev="true"/>
-    </div>
+      <Menu />
 
+     </div>
     <router-link to="/" class="phone__home-button home-button"></router-link>
   </div>
 </template>
@@ -42,6 +28,11 @@ import Menu from '../components/Menu.vue'
     name: 'Home',
     components: {
       Menu
-    }
+    },
+    data() {
+      return {
+        className: "home",
+      }
+    },
   }
 </script>

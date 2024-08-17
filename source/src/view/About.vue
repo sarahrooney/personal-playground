@@ -8,20 +8,29 @@
       <div class="about">
         <div class="about__cntnt">
           <h2>29/shethey/chicago</h2>
-          <a class="inline-link cv" href="https://docs.google.com/document/d/1xBTE-XqEK6XkJDirgz8oyHLrDkxgKjRqUS8ZSMpZAf8/edit?usp=sharing" target="_blank"><span>˗ˋ⊹CV⊹ˊ˗</span></a>
-          <p>my work explores the correlations between personal identity and personalized technology.</p>
-          <p>i'm also a fontend web developer in love with css. i'm currently working at <a href="//patagonia.com/" target="_blank"><span>Patagonia</span></a>.</p>
-          <p>i've collaborated with the folks at <a href="//netizen.org/" target="_blank"><span>netizen.org</span></a> designing & styling <a href="//netnet.studio/" target="_blank"><span>netnet.studio</span></a>, an open source hypermedia tool for learning and playing with code in the browser.</p>
+          <div class="about__cv">
+            <a class="inline-link cv" href="https://docs.google.com/document/d/1xBTE-XqEK6XkJDirgz8oyHLrDkxgKjRqUS8ZSMpZAf8/edit?usp=sharing" target="_blank"><span>˗ˋ⊹CV⊹ˊ˗</span></a>
+          </div>
+          <p>my work explores correlations between personal identity and personalized technology.</p>
+          <p>i'm a fontend web developer in love with css currently working at <a href="//patagonia.com/" target="_blank"><span>Patagonia</span></a>.</p>
+          <p>& i collaborate with the folks at <a href="//netizen.org/" target="_blank"><span>netizen.org</span></a> designing & styling <a href="//netnet.studio/" target="_blank"><span>netnet.studio</span></a>, an open source hypermedia tool for learning and playing with code in the browser.</p>
         </div>
 
-        <div class="about__socials">
-          <p>💌 rooney.sarah2@gmail.com</p>
-          <p>🐦 <a href="//twitter.com/watercaress" target="_blank"><span>@watercaress</span></a></p>
-          <p>📸 <a href="//www.instagram.com/watercaress_/" target="_blank"><span>@watercaress_</span></a></p>
+        <div class="about__contact">
+          <p>💌
+            <button class="inline-link" @click="copyEmail">
+              <span>sarahrrooney@gmail.com</span>
+            </button>
+          </p>
+          <p>📸 
+            <a href="//www.instagram.com/watercaress_/" target="_blank">
+              <span>@watercaress_</span>
+            </a>
+          </p>
         </div>
       </div>
 
-      <Menu v-bind:about="true" v-bind:work="true" v-bind:dev="true"/>
+      <Menu :about="true" />
     </div>
 
     <router-link to="/" class="phone__home-button home-button"></router-link>
@@ -35,6 +44,29 @@ import Menu from '../components/Menu.vue'
     name: 'About',
     components: {
       Menu
-    }
+    },
+    methods: {
+      copyEmail() {
+        const el = document.createElement('textarea');  
+        el.value = 'sarahrrooney@gmail.com';
+        el.setAttribute('readonly', '');                
+        el.style.position = 'absolute';              
+        el.style.left = '-9999px';                      
+        document.body.appendChild(el);                  
+        const selected =  document.getSelection().rangeCount > 0  ? document.getSelection().getRangeAt(0) : false;                                    
+        el.select();                                    
+        document.execCommand('copy');                   
+        document.body.removeChild(el);                  
+        if (selected) {                                 
+          document.getSelection().removeAllRanges();    
+          document.getSelection().addRange(selected);   
+        }
+      }
+    },
+    data() {
+      return{
+        className: "about",
+      }
+    },
   }
 </script>
