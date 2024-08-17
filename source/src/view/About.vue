@@ -17,16 +17,19 @@
         </div>
 
         <div class="about__contact">
-          <p>💌
-            <button class="inline-link" @click="copyEmail">
-              <span>sarahrrooney@gmail.com</span>
+          <div class="about__contact__item">
+            💌 
+            <button class="about__contact__email inline-link" @click="copyEmail">
+              <span class="email">sarahrrooney@gmail.com</span>
             </button>
-          </p>
-          <p>📸 
-            <a href="//www.instagram.com/watercaress_/" target="_blank">
+            <span class="copied">copied! <img src="../assets/images/bubble-pop.gif"></span>
+          </div>
+          <div class="about__contact__item">
+            📸 
+            <a class="inline-link" href="//www.instagram.com/watercaress_/" target="_blank">
               <span>@watercaress_</span>
             </a>
-          </p>
+          </div>
         </div>
       </div>
 
@@ -46,7 +49,7 @@ import Menu from '../components/Menu.vue'
       Menu
     },
     methods: {
-      copyEmail() {
+      copyEmail(event) {
         const el = document.createElement('textarea');  
         el.value = 'sarahrrooney@gmail.com';
         el.setAttribute('readonly', '');                
@@ -61,6 +64,11 @@ import Menu from '../components/Menu.vue'
           document.getSelection().removeAllRanges();    
           document.getSelection().addRange(selected);   
         }
+
+        const copiedEl = document.querySelector('.copied');
+        copiedEl.classList.add('show');
+
+        setTimeout(() => copiedEl.classList.remove('show'), 3000);
       }
     },
     data() {
