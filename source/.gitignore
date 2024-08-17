@@ -3,7 +3,8 @@ node_modules/
 dist/
 npm-debug.log
 yarn-error.log
-.parcel-cache
+.parcel-cache/
+.cache/
 
 # Editor directories and files
 .idea

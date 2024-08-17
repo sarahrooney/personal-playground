@@ -1,23 +1,29 @@
 .phone {
-  position: absolute;
-  top: 7%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 390px;
-  height: 754px;
+  position: relative;
+  display: block;
+
+  width: calc(100vw - 80px);
+  max-width: 390px;
+  height: 90vh;
+  max-height: 754px;
+  min-height: 622px;
+
+  margin: 5vh auto;
   border: 3px solid $white;
   border-radius: 30px;
 
-  @media (max-width: 430px) {
-    top: 50%;
+  @media (max-width: 500px) {
     width: calc(100vw - 8px);
-    height: auto;
+    height: 94vh;
+    max-height: none;
+
+    margin: 3vh auto;
     border: none;
   }
 
-  &-top {
+  &__top {
     position: absolute;
-    top: calc(50% - 335px);
+    top: 44px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60px;
@@ -25,9 +31,8 @@
     background-color: $white;
     border-radius: 5px;
 
-    @media (max-width: 430px) {
+    @media (max-width: 500px) {
       display: none;
-      top: 45px;
     }
 
     &:before {
@@ -43,40 +48,50 @@
     }
   }
 
-  &-screen {
+  &__screen {
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
     position: absolute;
-    top: 51%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 344px;
-    height: 600px;
-    border: 3px solid aliceblue;
+    height: 68vh;
+    max-height: 600px;
+    min-height: 455px;
+    border: 3px solid $light-blue;
     border-radius: 5px;
     overflow: hidden;
 
-    @media (max-width: 430px) {
+    @media (max-width: 500px) {
+      top: 47%;
+
       width: calc(100vw - 60px);
-      height: calc(100vh - 180px);
+      max-height: initial;
+      height: 85%;
+      min-height: initial;
     }
   }
 
   .home-button {
     position: absolute;
-    top: calc(50% + 343px);
+    bottom: 15px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     width: 42px;
     height: 42px;
     border: 3px solid $white;
     border-radius: 100%;
+    box-shadow: inset 0 0 0 0 $light-blue;
+    transition: box-shadow 0.4s ease-out;
 
-    @media (max-width: 430px) {
-      display: none;
-      top: auto;
-      bottom: -7px;
+    @media (max-width: 500px) {
+      bottom: 10px;
+    }
+
+    &:hover {
+      box-shadow: inset 0 1px 7px 0 $light-blue;
     }
   }
 
@@ -96,20 +111,20 @@
       display: inline-block;
       max-width: 72%;
       color: $black;
-      background: aliceblue;
+      background: $light-blue;
       padding: 5px 10px;
       margin: 0;
       border-radius: 10px;
     }
 
     a {
-      color: dodgerblue;
+      color: $blue;
       background-color: transparent;
       text-decoration: underline;
 
       &:hover {
-        color: aliceblue;
-        background-color: dodgerblue;
+        color: $light-blue;
+        background-color: $blue;
       }
     }
 
@@ -119,18 +134,18 @@
       text-align: right;
 
       p {
-        color: aliceblue;
-        background: dodgerblue;
+        color: $light-blue;
+        background: $blue;
       }
 
       a {
-        color: aliceblue;
+        color: $light-blue;
         background-color: transparent;
         text-decoration: underline;
 
         &:hover {
-          color: dodgerblue;
-          background-color: aliceblue;
+          color: $blue;
+          background-color: $light-blue;
         }
       }
     }
@@ -182,89 +197,9 @@
     height: 610px;
     background-color: $white;
 
-    @media (max-width: 430px) {
+    @media (max-width: 500px) {
       width: calc(100vw - 60px);
-      height: calc(100vh - 180px);
-    }
-  }
-
-  .apps {
-    position: relative;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-
-    padding: 10px 24px 4px;
-
-    background-color: aliceblue;
-
-    @media (max-width: 430px) {
-      padding: 10px 0 4px
-    }
-
-    &__btn {
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      justify-content: center;
-      flex: 0 0 24%;
-
-      text-align: center;
-      text-decoration: none;
-
-      &:hover {
-        .icon {
-          // background-color: #156fc6;
-          color: dodgerblue;
-          background-color: $white;
-          border: 2px solid dodgerblue;
-
-          > span {
-            color: dodgerblue;
-          }
-        }
-      }
-
-      .icon {
-        width: 50px;
-        height: 50px;
-        margin: 0;
-        border-radius: 5px;
-        border: 2px solid dodgerblue;
-        padding: 10px 2px;
-        font-size: 20px;
-        color: $white;
-        background-color: dodgerblue;
-        box-sizing: border-box;
-        transition: background 0.3s ease, color 0.3s ease;
-        box-shadow: 0px 0px 9px -2px rgba(34, 16, 16, 0.45);
-
-        &--about {
-          padding: 2px 2px;
-
-          > span {
-            color: $white;
-            font-size: 34px;
-
-            transition: color 0.3s ease;
-          }
-        }
-
-        &--work {
-          font-size: 22px;
-        }
-      }
-
-      > span:not(.icon) {
-        width: 100%;
-        padding-top: 2px;
-        color: dodgerblue;
-        font-family: monospace;
-
-        @media (max-width: 430px) {
-          font-size: 14px;
-        }
-      }
+      height: 100%;
     }
   }
 }
@@ -279,15 +214,15 @@
 }
 
 @keyframes showText {
-    from {
-      position: absolute;
-      opacity: 0;
-      transform: translateY(100px);
-    }
-
-    to {
-      position: relative;
-      opacity: 1;
-      transform: translateY(-10px);
-    }
+  from {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(100px);
   }
+
+  to {
+    position: relative;
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+}

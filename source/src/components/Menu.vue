@@ -1,21 +1,31 @@
 <template>
   <div class="menu">
     <div class="apps">
-      <router-link to="/" class="apps__btn">
+      <!-- <router-link to="/" class="apps__btn">
         <span class="icon icon--home">°˖⤾</span>
         <span>Home</span>
+      </router-link> -->
+      <router-link to="/about" class="apps__btn" :class="{active : about}">
+        <div class="icon icon--about">
+          <span class="icon__inner">
+            <span>✎</span> ̼
+          </span>
+        </div>
+        <span>about</span>
       </router-link>
-      <router-link v-if="about" to="/about" class="apps__btn">
-        <span class="icon icon--about"><span>✎</span> ̼</span>
-        <span>About</span>
+      <router-link to="/work" class="apps__btn" :class="{active : work}">
+        <div class="icon icon--work">
+          <span class="icon__inner">
+            ʚ☻ɞ
+          </span>
+        </div>
+        <span>work</span>
       </router-link>
-      <router-link v-if="work" to="/work" class="apps__btn">
-        <span class="icon icon--work">ʚ☻ɞ</span>
-        <span>Work</span>
-      </router-link>
-      <router-link v-if="dev" to="/development" class="apps__btn">
-        <span class="icon icon--dev">꩜˖*</span>
-        <span>Web Dev</span>
+      <router-link to="/development" class="apps__btn" :class="{active : dev}">
+        <div class="icon icon--dev">
+          <span class="icon__inner">꩜˖*</span>
+        </div>
+        <span>dev</span>
       </router-link>
     </div>
   </div>
