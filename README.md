@@ -3,7 +3,7 @@
 > rebuilding my personal website!
 :-)
 
-`/build` and `/src` are old. all new stuff is in `/source`, so cd into there before doing anything. i'll delete old content when i feel like i'm in a good place with new setup.
+cd into `source` first, then use compile using npm & parcel.
 
 ## Build Setup
 
