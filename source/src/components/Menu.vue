@@ -7,25 +7,27 @@
       </router-link> -->
       <router-link to="/about" class="apps__btn" :class="{active : about}">
         <div class="icon icon--about">
-          <span class="icon__inner">
-            <span>✎</span> ̼
-          </span>
+          <img src="../assets/images/menu/about.png" 
+               alt="Link to About"
+               class="icon__inner">
         </div>
-        <span>about</span>
+        <span class="icon__label">about</span>
       </router-link>
       <router-link to="/work" class="apps__btn" :class="{active : work}">
         <div class="icon icon--work">
-          <span class="icon__inner">
-            ʚ☻ɞ
-          </span>
+          <img src="../assets/images/menu/work.png" 
+               alt="Link to Work"
+               class="icon__inner">
         </div>
-        <span>work</span>
+        <span class="icon__label">work</span>
       </router-link>
       <router-link to="/development" class="apps__btn" :class="{active : dev}">
         <div class="icon icon--dev">
-          <span class="icon__inner">꩜˖*</span>
+          <img src="../assets/images/menu/dev.png" 
+               alt="Link to Dev"
+               class="icon__inner">
         </div>
-        <span>dev</span>
+        <span class="icon__label">dev</span>
       </router-link>
     </div>
   </div>
