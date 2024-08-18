@@ -1,5 +1,5 @@
 <template>
-  <div class="phone">
+  <div class="phone home">
     <h1 class="sr-only">Sarah Rooney</h1>
     <div class="phone__top"></div>
     <div class="phone__screen">

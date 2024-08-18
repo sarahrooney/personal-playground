@@ -16,6 +16,10 @@ body {
   line-height: 1.2em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 780px) {
+    font-size: 14px;
+  }
 }
 
 h1,
@@ -71,6 +75,10 @@ button.inline-link {
   line-height: 1.2em;
   text-decoration: none;
   transition: color 0.3s ease, background-color 0.3s ease;
+
+  @media (max-width: 780px) {
+    font-size: 14px;
+  }
 
   &:after {
     content: '';
