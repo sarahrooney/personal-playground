@@ -3,9 +3,7 @@
 
   padding: 24px 16px;
 
-  overflow: scroll;
-
-  animation: $fadeIn;
+  overflow-y: scroll;
 
 	&__cntnt {
   	margin: 0 auto;
