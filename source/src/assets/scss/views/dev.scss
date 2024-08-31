@@ -1,9 +1,27 @@
 .dev {
   position: relative;
 
-  padding: 24px 16px;
+  padding: 0 0 24px;
 
   overflow-y: scroll;
+
+  flex-grow: 1;
+
+  &__hdr {
+    display: block;
+    width: 100%;
+    padding: 12px 0 16px;
+    margin: 0;
+    
+    text-align: center;
+
+    color: $white;
+    background: $light-blue;
+
+    font-style: italic;
+    font-family: $mono;
+    text-shadow: 2px 3px 6px #024484;
+  }
 
   &__cntnt {
     margin: 0 auto;
@@ -20,7 +38,7 @@
   &__item {
     display: block;
     font-family: $mono;
-    margin: 40px 0;
+    margin: 40px auto;
 
     &:last-of-type {
       margin-bottom: 0;

@@ -7,6 +7,8 @@
 
   animation: $fadeIn;
 
+  flex-grow: 1;
+
 	&__cntnt {
     > *:first-child {
       margin-top: 0;
@@ -15,6 +17,9 @@
     h2 {
       display: inline-block;
       color: $blue;
+      font-family: $mono;
+      font-style: italic;
+      text-align: center;
 
       @media (max-width: 430px) {
         display: block;

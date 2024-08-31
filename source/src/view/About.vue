@@ -2,7 +2,7 @@
   <div class="phone">
     <h1 class="sr-only">Sarah Rooney | About</h1>
     <div class="phone__top"></div>
-    <div class="phone__screen">
+    <div class="phone__screen phone__screen--start">
       <div class="overlay"></div>
 
       <div class="about">

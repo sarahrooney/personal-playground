@@ -1,32 +1,237 @@
 .work {
   position: relative;
 
-  padding: 24px 16px;
+  padding: 0 0 16px;
 
   overflow-y: scroll;
 
+  flex-grow: 1;
+
+  &__hdr {
+    display: block;
+    width: 100%;
+    padding: 12px 0 16px;
+    margin: 0;
+    
+    text-align: center;
+
+    color: $white;
+    background: $light-blue;
+
+    font-style: italic;
+    font-family: $mono;
+    text-shadow: 2px 3px 6px #024484;
+  }
+
 	&__cntnt {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+
   	margin: 0 auto;
-
-    > *:first-child {
-      margin-top: 0;
-    }
-
-    h1 {
-      color: $blue;
-    }
 
     p {
     	margin: 16px 0;
     }
   }
 
-  &__item {
-    font-family: $mono;
-    margin-bottom: 40px;
+  &__app {
+    position: relative;
 
-    &:last-of-type {
-      margin-bottom: 0;
+    width: calc(33.333% - 16px);
+    aspect-ratio: 1 / 1;
+    max-height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 9px -2px rgba(0,0,0,0);
+
+    margin: 8px;
+
+    transition: box-shadow 0.5s ease;
+
+    &__img {
+      object-fit: cover;
+      object-position: 70% 40%;
+      width: 100%;
+      height: 100%;
+
+      transform: scale(2);
+
+      transition: transform 0.3s ease;
+      pointer-events: none;
+    }
+
+    &:hover,
+    &:focus-visible {
+      box-shadow: 0px 0px 9px -2px rgba(34, 16, 16, 0.3);
+
+      .work__app__img {
+        transform: scale(2.3);
+      }
+    }
+
+    &-wrapper {
+      margin: 8px;
+    }
+  }
+
+  &__item-wrapper {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    padding: 0;
+
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+
+    &.hide {
+      visibility: hidden;
+      opacity: 0;
+
+      .work__item {
+        height: 0%;
+
+        pointer-events: none;
+
+        @media (max-width: 500px) {
+          height: 0%;
+        }
+      }
+    }
+
+    &.show {
+      visibility: visible;
+      opacity: 1;
+
+      .work__item {
+        height: 95%;
+
+        overflow-y: scroll;
+
+        pointer-events: all;
+
+        @media (max-width: 500px) {
+          height: 98%;
+        }
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: block;
+
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 1%;
+
+    padding: 54px 24px 48px 24px;
+    border-radius: 8px;
+
+    background: $white;
+
+    font-family: $mono;
+
+    overflow: hidden;
+    pointer-events: none;
+
+    transition: height 0.5s ease-in;
+
+    z-index: 2;
+
+    @media (max-width: 500px) {
+      top: 2%;
+    }
+
+    &-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      opacity: 0.3;
+      background: $gray;
+      pointer-events: none;
+    }
+
+    &-nav {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      top: 5%;
+      left: 5%;
+      width: 90%;
+      height: 34px;
+
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+
+      background-color: $light-blue;
+
+      z-index: 4;
+      pointer-events: all;
+
+      .close {
+        position: relative;
+        display: block;
+        height: 28px;
+        width: 28px;
+        margin-right: 20px;
+
+        &:focus-visible {
+          @include focus-visible();
+        }
+
+        &:hover {
+          .close__line {
+            background: $gray;
+          }
+        }
+
+        &__line {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+
+          width: 90%;
+          height: 6px;
+          border-radius: 8px;
+          background: $blue;
+
+          transition: background .3s ease-in-out;
+
+          transform: translate(-50%, -50%) rotate(45deg);
+
+          &:nth-of-type(2) {
+            transform: translate(-50%, -50%) rotate(-45deg);
+          }
+        }
+      }
+    }
+
+    &__title {
+      h2 {
+        display: block;
+        margin: 0 0 0.25em;
+
+        color: $blue;
+
+        font-style: italic;
+        font-family: $mono;
+      }
     }
 
     img {
@@ -74,13 +279,6 @@
         height: 100%;
         object-fit: cover;
       }
-    }
-  }
-
-  &__title {
-    h2 {
-      color: $blue;
-      margin-bottom: 0;
     }
   }
 }
