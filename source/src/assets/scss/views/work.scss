@@ -183,6 +183,10 @@
       z-index: 4;
       pointer-events: all;
 
+      @media (max-width: 500px) {
+        top: 1.5%;
+      }
+
       .close {
         position: relative;
         display: block;
