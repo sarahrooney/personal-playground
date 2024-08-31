@@ -1,13 +1,12 @@
 <template>
   <div class="phone">
     <div class="phone__top"></div>
-    <div class="phone__screen">
+    <div class="phone__screen phone__screen--start">
       <div class="overlay"></div>
 
       <div class="dev">
         <div class="dev__cntnt">
-          
-            <h1>front-end dev</h1>
+            <h1 class="dev__hdr">front-end dev</h1>
 
             <div class="dev__item">
               <div class="dev__title">

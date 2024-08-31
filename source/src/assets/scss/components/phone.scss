@@ -73,6 +73,10 @@
       height: 100%;
       min-height: initial;
     }
+
+    &--start {
+      justify-content: flex-start;
+    }
   }
 
   .home-button {
