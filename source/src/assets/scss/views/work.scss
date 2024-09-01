@@ -120,7 +120,7 @@
         pointer-events: all;
 
         @media (max-width: 500px) {
-          height: 98%;
+          height: 97%;
         }
       }
     }
@@ -150,7 +150,7 @@
     z-index: 2;
 
     @media (max-width: 500px) {
-      top: 2%;
+      top: 3%;
     }
 
     &-overlay {
@@ -184,7 +184,7 @@
       pointer-events: all;
 
       @media (max-width: 500px) {
-        top: 1.5%;
+        top: 1%;
       }
 
       .close {
