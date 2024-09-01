@@ -118,10 +118,6 @@
         overflow-y: scroll;
 
         pointer-events: all;
-
-        @media (max-width: 500px) {
-          height: 97%;
-        }
       }
     }
   }
@@ -148,10 +144,6 @@
     transition: height 0.5s ease-in;
 
     z-index: 2;
-
-    @media (max-width: 500px) {
-      top: 3%;
-    }
 
     &-overlay {
       position: absolute;
@@ -184,7 +176,7 @@
       pointer-events: all;
 
       @media (max-width: 500px) {
-        top: 1%;
+        top: 1.25%;
       }
 
       .close {
