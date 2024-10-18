@@ -25,7 +25,7 @@
 
             <button id="paintbucket" class="work__app" @click="toggle">
               <img 
-                src="../assets/images/work/paintbucket.jpg"
+                src="../assets/images/work/paintbucket-icon.jpg"
                 alt="paintbucket" 
                 class="work__app__img">
             </button>
@@ -34,6 +34,13 @@
               <img 
                 src="../assets/images/work/miracle-screenshot.png"
                 alt="MIRACLE" 
+                class="work__app__img">
+            </button>
+
+            <button id="sandingirl" class="work__app" @click="toggle">
+              <img
+                src="../assets/images/work/animegirl-screenshot.jpg"
+                alt="ANIMEGIRL001"
                 class="work__app__img">
             </button>
 
@@ -123,7 +130,7 @@
         <h2>paintbucket (for susan kare)</h2>
         <span>2015, handwoven</span>
       </div>
-      <img src="../assets/images/work/paintbucket.jpg" alt="a weaving with susan kare's paintbucket icon on it">
+      <img src="../assets/images/work/paintbucket.jpg" alt="vertical dark pink fabric with susan kare's paintbucket icon woven into it">
     </div>
   </dialog>
 
@@ -146,6 +153,25 @@
     </div>
   </dialog>
 
+  <dialog id="sandingirl-modal" class="work__item-wrapper hide">
+    <div class="work__item-overlay"></div>
+    <div class="work__item-nav">
+      <button class="close" @click="hide">
+        <span class="close__line"></span>
+        <span class="close__line"></span>
+      </button>
+    </div>
+    <div class="work__item">
+      <div class="work__item__title">
+        <h2>ANIMEGIRL001</h2>
+        <span>2014</span>
+      </div>
+      <div class="video video--miracle">
+        <iframe src="https://player.vimeo.com/video/106987342?h=25aceb312b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="958" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="ANIMEGIRL001"></iframe>
+      </div>
+    </div>
+  </dialog>
+
   <dialog id="mainframe-modal" class="work__item-wrapper hide">
     <div class="work__item-overlay"></div>
     <div class="work__item-nav">
@@ -157,7 +183,7 @@
     <div class="work__item">
       <div class="work__item__title">
         <h2>mainframe</h2>
-        <span>2014, handwoven cotton fabric, deviantart</span>
+        <span>2014, handwoven cotton fabric, <a href="https://www.deviantart.com/peppermint0123/art/Anime-Base-3-Girl-Using-the-Computer-440563214" target="_blank">anime base PepperMint0123@deviantart</a></span>
       </div>
       <img src="../assets/images/work/mainframe.gif" alt="visuals">
     </div>

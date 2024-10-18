@@ -48,6 +48,8 @@
 
     margin: 8px;
 
+    background: #001eff;
+
     transition: box-shadow 0.5s ease;
 
     &__img {
@@ -57,6 +59,7 @@
       height: 100%;
 
       transform: scale(2);
+      mix-blend-mode: screen;
 
       transition: transform 0.3s ease;
       pointer-events: none;
@@ -113,7 +116,7 @@
       opacity: 1;
 
       .work__item {
-        height: 95%;
+        height: 90%;
 
         overflow-y: scroll;
 
@@ -182,9 +185,9 @@
       .close {
         position: relative;
         display: block;
-        height: 28px;
-        width: 28px;
-        margin-right: 20px;
+        height: 24px;
+        width: 24px;
+        margin-right: 24px;
 
         &:focus-visible {
           @include focus-visible();
@@ -203,9 +206,9 @@
           left: 50%;
 
           width: 90%;
-          height: 6px;
+          height: 4px;
           border-radius: 8px;
-          background: $blue;
+          background: #9cc6ed;
 
           transition: background .3s ease-in-out;
 
