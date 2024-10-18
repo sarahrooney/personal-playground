@@ -108,6 +108,10 @@ button.inline-link {
       background-color: $blue;
     }
   }
+
+  &--light {
+    color: $light-blue;
+  }
 }
 
 .sr-only {

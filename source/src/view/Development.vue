@@ -6,44 +6,69 @@
 
       <div class="dev">
         <div class="dev__cntnt">
-            <h1 class="dev__hdr">front-end dev</h1>
+            <h1 class="dev__hdr">frontend dev</h1>
 
             <div class="dev__item">
               <div class="dev__title">
-                <h2>The Apollo Theater</h2> <span>@ clique studios</span>
+                <h2>the apollo theater</h2> <span>@ clique studios</span>
               </div>
-              <!-- <video muted="muted" preload="none" loop="loop" autoplay="autoplay" poster="../assets/images/dev/apollo_1.jpg">
-                <source src="../assets/media/apollo1.mp4" type="video/mp4">
-              </video> -->
-              <img src="../assets/images/dev/apollo_1.jpg" alt="screenshot of Apollo's homepage">
-              <!-- <span>design by the talented folks at Clique Studios</span> -->
+              <button class="view" id="apollo" @click="clickHandler">
+                <img src="../assets/images/dev/apollo_1.jpg" alt="screenshot of Apollo's homepage">
+              </button>
               <a class="inline-link" href="//www.apollotheater.org/" target="_blank"><span>apollotheater.org</span></a><br>
-              <span>wordpress development</span>
+              <!-- <span class="dev__tag">wordpress</span> -->
             </div>
 
             <div class="dev__item">
               <div class="dev__title">
-                <h2>Done in an R1</h2> <span>@ someoddpilot</span>
+                <h2>done in an r1</h2> <span>@ someoddpilot</span>
               </div>
-              <!-- <video muted="muted" preload="none" loop="loop" autoplay="autoplay" poster="../assets/images/dev/r1_poster.jpg">
-                <source src="../assets/media/toprecording.mp4" type="video/mp4">
-              </video> -->
-              <img src="../assets/images/dev/r1_2.jpg" alt="screenshot of Patagonia's Done in an R1 site">
-              <img src="../assets/images/dev/r1_1.jpg" alt="screenshot of Patagonia's Done in an R1 site">
-              <!-- <video muted="muted" preload="none" loop="loop" autoplay="autoplay" poster="../assets/images/dev/r1_poster2.jpg">
-                <source src="../assets/media/doneinanr1_2.mp4" type="video/mp4">
-              </video> -->
-              <!-- <span>design by the talented folks at Someoddpilot</span> -->
-              <span>vue single page application promoting patagonia's r1 jacket</span>
+              <button class="view" id="r1" @click="clickHandler">
+                <img src="../assets/images/dev/r1_poster.jpg" alt="screenshot of Patagonia's Done in an R1 site">
+              </button>
+              <!-- <span class="dev__tag">vue | single page application promoting patagonia's r1 jacket</span> -->
             </div>
 
         </div>
       </div>
       <Menu :dev="true"/>
-  </div>
+    </div>
 
     <router-link to="/" class="phone__home-button home-button"></router-link>
   </div>
+
+  <dialog id="apollo-modal" class="work__item-wrapper hide">
+    <div class="work__item-overlay" @click="hide"></div>
+    <div class="work__item-nav">
+      <button class="close" @click="hide">
+        <span class="close__line"></span>
+        <span class="close__line"></span>
+      </button>
+    </div>
+    <div class="work__item work__item--dev">
+      <div class="video" style="display:none;">
+        <video muted="muted" preload="none" loop="loop" autoplay="autoplay" poster="../assets/images/dev/apollo_1.jpg" >
+          <source src="../assets/media/apollo1.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="r1-modal" class="work__item-wrapper hide">
+    <div class="work__item-overlay" @click="hide"></div>
+    <div class="work__item-nav">
+      <button class="close" @click="hide">
+        <span class="close__line"></span>
+        <span class="close__line"></span>
+      </button>
+    </div>
+    <div class="work__item work__item--dev">
+      <div class="video" style="display:none;">
+        <iframe src="https://player.vimeo.com/video/1021102022?background=1" width="1180" height="620" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Done in an R1 Scrollthrough"></iframe>
+      </div>
+    </div>
+  </dialog>
+
 </template>
 
 <script>
@@ -53,6 +78,44 @@ export default {
   name: 'Development',
   components: {
     Menu
-  }
+  },
+  methods: {
+    videoLoad(e) {
+      e.preventDefault();
+
+      const videoLoading = document.querySelectorAll('.video')
+
+      if (videoLoading) {
+        videoLoading.forEach(i => {
+          i.style.display = "block";
+        })
+        // for (var i = videoLoading.length - 1; i >= 0; i--) {
+          // let mediaUrl = videoLoading[i].getAttribute('data-media-url');
+          // videoLoading[i].setAttribute('src', mediaUrl);
+        // }
+      }
+    },
+    toggle(e) {
+      e.preventDefault();
+
+      const targetId = e.target.closest('.view').id;
+      const targetModal = document.querySelector(`#${targetId}-modal`);
+      targetModal.classList.remove('hide');
+      targetModal.classList.add('show');
+    },
+    clickHandler(e) {
+      this.videoLoad(e);
+      this.toggle(e);
+    },
+    hide(e) {
+      e.preventDefault();
+
+      const target = e.target;
+      const targetParent = target.closest('.work__item-wrapper.show');
+
+      targetParent.classList.remove('show');
+      targetParent.classList.add('hide');
+    },
+  },
 };
 </script>
