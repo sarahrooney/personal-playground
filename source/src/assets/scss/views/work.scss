@@ -48,6 +48,8 @@
 
     margin: 8px;
 
+    background: #001eff;
+
     transition: box-shadow 0.5s ease;
 
     &__img {
@@ -57,6 +59,7 @@
       height: 100%;
 
       transform: scale(2);
+      mix-blend-mode: screen;
 
       transition: transform 0.3s ease;
       pointer-events: none;
@@ -73,208 +76,6 @@
 
     &-wrapper {
       margin: 8px;
-    }
-  }
-
-  &__item-wrapper {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-    background: none;
-    padding: 0;
-
-    visibility: hidden;
-    pointer-events: none;
-    opacity: 0;
-
-    transition: visibility 0.3s ease, opacity 0.3s ease;
-
-    &.hide {
-      visibility: hidden;
-      opacity: 0;
-
-      .work__item {
-        height: 0%;
-
-        pointer-events: none;
-
-        @media (max-width: 500px) {
-          height: 0%;
-        }
-      }
-    }
-
-    &.show {
-      visibility: visible;
-      opacity: 1;
-
-      .work__item {
-        height: 95%;
-
-        overflow-y: scroll;
-
-        pointer-events: all;
-      }
-    }
-  }
-
-  &__item {
-    position: relative;
-    display: block;
-
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 1%;
-
-    padding: 54px 24px 48px 24px;
-    border-radius: 8px;
-
-    background: $white;
-
-    font-family: $mono;
-
-    overflow: hidden;
-    pointer-events: none;
-
-    transition: height 0.5s ease-in;
-
-    z-index: 2;
-
-    &-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      opacity: 0.3;
-      background: $gray;
-      pointer-events: none;
-    }
-
-    &-nav {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-
-      top: 5%;
-      left: 5%;
-      width: 90%;
-      height: 34px;
-
-      border-top-right-radius: 8px;
-      border-top-left-radius: 8px;
-
-      background-color: $light-blue;
-
-      z-index: 4;
-      pointer-events: all;
-
-      @media (max-width: 500px) {
-        top: 1.25%;
-      }
-
-      .close {
-        position: relative;
-        display: block;
-        height: 28px;
-        width: 28px;
-        margin-right: 20px;
-
-        &:focus-visible {
-          @include focus-visible();
-        }
-
-        &:hover {
-          .close__line {
-            background: $gray;
-          }
-        }
-
-        &__line {
-          display: block;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-
-          width: 90%;
-          height: 6px;
-          border-radius: 8px;
-          background: $blue;
-
-          transition: background .3s ease-in-out;
-
-          transform: translate(-50%, -50%) rotate(45deg);
-
-          &:nth-of-type(2) {
-            transform: translate(-50%, -50%) rotate(-45deg);
-          }
-        }
-      }
-    }
-
-    &__title {
-      h2 {
-        display: block;
-        margin: 0 0 0.25em;
-
-        color: $blue;
-
-        font-style: italic;
-        font-family: $mono;
-      }
-    }
-
-    img {
-      display: block;
-      width: auto;
-      max-width: 100%;
-      height: auto;
-      margin: 16px 0;
-
-      &.half {
-        display: inline-block;
-        width: 48%;
-
-        &--left {
-          margin-top: 8px;
-          margin-bottom: 8px;
-          margin-right: 2%;
-        }
-
-        &--right {
-          margin-top: 8px;
-          margin-bottom: 8px;
-          margin-left: 2%;
-        }
-      }
-    }
-
-    .video {
-      display: block;
-      position: relative;
-      width: 100%;
-      height: 0;
-      padding-bottom: 56.25%;
-      margin: 16px 0;
-
-      &--miracle {
-        padding-bottom: 74.25%;
-      }
-
-      iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
     }
   }
 }

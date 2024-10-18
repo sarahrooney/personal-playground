@@ -25,7 +25,7 @@
 
             <button id="paintbucket" class="work__app" @click="toggle">
               <img 
-                src="../assets/images/work/paintbucket.jpg"
+                src="../assets/images/work/paintbucket-icon.jpg"
                 alt="paintbucket" 
                 class="work__app__img">
             </button>
@@ -34,6 +34,13 @@
               <img 
                 src="../assets/images/work/miracle-screenshot.png"
                 alt="MIRACLE" 
+                class="work__app__img">
+            </button>
+
+            <button id="sandingirl" class="work__app" @click="toggle">
+              <img
+                src="../assets/images/work/animegirl-screenshot.jpg"
+                alt="ANIMEGIRL001"
                 class="work__app__img">
             </button>
 
@@ -70,7 +77,7 @@
   </div>
 
   <dialog id="soft-computers-modal" class="work__item-wrapper hide">
-    <div class="work__item-overlay"></div>
+    <div class="work__item-overlay" @click="hide"></div>
     <div class="work__item-nav">
       <button class="close" @click="hide">
         <span class="close__line"></span>
@@ -80,17 +87,17 @@
     <div class="work__item">
       <div class="work__item__title">
         <h2>soft computers</h2>
-        <span>2018, crochet and ebook</span>
+        <span>2018, crochet and ebook</span><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="//drive.google.com/file/d/1e0Jpiy0VY_nRIMv5lNxpRv3S8MKNNMP4/view?usp=sharing" target="_blank" class="inline-link inline-link--light"><span>˗ˋ⊹link to ebook⊹ˊ˗</span></a>
       </div>
       <img src="../assets/images/work/softcomputers_appleiie.jpg" alt="crochet of the Apple IIe computer">
-      <a href="//drive.google.com/file/d/1e0Jpiy0VY_nRIMv5lNxpRv3S8MKNNMP4/view?usp=sharing" target="_blank" class="inline-link"><span>˗ˋ⊹link to ebook⊹ˊ˗</span></a>
       <img src="../assets/images/work/softcomputers_booklet1.jpg" alt="Booklet pages 1 and 2">
       <img src="../assets/images/work/softcomputers_booklet2.jpg" alt="Booklet pages 1 and 2">
     </div>
   </dialog>
 
   <dialog id="daisy-bell-modal" class="work__item-wrapper hide">
-    <div class="work__item-overlay"></div>
+    <div class="work__item-overlay" @click="hide"></div>
     <div class="work__item-nav">
       <button class="close" @click="hide">
         <span class="close__line"></span>
@@ -111,7 +118,7 @@
   </dialog>
 
   <dialog id="paintbucket-modal" class="work__item-wrapper hide">
-    <div class="work__item-overlay"></div>
+    <div class="work__item-overlay" @click="hide"></div>
     <div class="work__item-nav">
       <button class="close" @click="hide">
         <span class="close__line"></span>
@@ -123,12 +130,12 @@
         <h2>paintbucket (for susan kare)</h2>
         <span>2015, handwoven</span>
       </div>
-      <img src="../assets/images/work/paintbucket.jpg" alt="a weaving with susan kare's paintbucket icon on it">
+      <img src="../assets/images/work/paintbucket.jpg" alt="vertical dark pink fabric with susan kare's paintbucket icon woven into it">
     </div>
   </dialog>
 
   <dialog id="miracle-modal" class="work__item-wrapper hide">
-    <div class="work__item-overlay"></div>
+    <div class="work__item-overlay" @click="hide"></div>
     <div class="work__item-nav">
       <button class="close" @click="hide">
         <span class="close__line"></span>
@@ -146,8 +153,27 @@
     </div>
   </dialog>
 
+  <dialog id="sandingirl-modal" class="work__item-wrapper hide">
+    <div class="work__item-overlay" @click="hide"></div>
+    <div class="work__item-nav">
+      <button class="close" @click="hide">
+        <span class="close__line"></span>
+        <span class="close__line"></span>
+      </button>
+    </div>
+    <div class="work__item">
+      <div class="work__item__title">
+        <h2>ANIMEGIRL001</h2>
+        <span>2014</span>
+      </div>
+      <div class="video">
+        <iframe src="https://player.vimeo.com/video/106987342?h=25aceb312b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="958" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="ANIMEGIRL001"></iframe>
+      </div>
+    </div>
+  </dialog>
+
   <dialog id="mainframe-modal" class="work__item-wrapper hide">
-    <div class="work__item-overlay"></div>
+    <div class="work__item-overlay" @click="hide"></div>
     <div class="work__item-nav">
       <button class="close" @click="hide">
         <span class="close__line"></span>
@@ -157,14 +183,14 @@
     <div class="work__item">
       <div class="work__item__title">
         <h2>mainframe</h2>
-        <span>2014, handwoven cotton fabric, deviantart</span>
+        <span>2014, handwoven cotton fabric, <a href="https://www.deviantart.com/peppermint0123/art/Anime-Base-3-Girl-Using-the-Computer-440563214" target="_blank" class="inline-link inline-link--light"><span>anime base PepperMint0123@deviantart</span></a></span>
       </div>
       <img src="../assets/images/work/mainframe.gif" alt="visuals">
     </div>
   </dialog>
 
   <dialog id="visuals-modal" class="work__item-wrapper hide">
-    <div class="work__item-overlay"></div>
+    <div class="work__item-overlay" @click="hide"></div>
     <div class="work__item-nav">
       <button class="close" @click="hide">
         <span class="close__line"></span>
@@ -185,7 +211,7 @@
   </dialog>
 
   <dialog id="voices-modal" class="work__item-wrapper hide">
-    <div class="work__item-overlay"></div>
+    <div class="work__item-overlay" @click="hide"></div>
     <div class="work__item-nav">
       <button class="close" @click="hide">
         <span class="close__line"></span>
@@ -197,7 +223,7 @@
         <h2>voices</h2>
         <span>2013, woven ethernet cables</span>
       </div>
-      <img src="../assets/images/work/voices.jpg" alt="visuals" class="">
+      <img src="../assets/images/work/voices.jpg" alt="visuals">
     </div>
   </dialog>
 
@@ -212,6 +238,16 @@ export default {
     Menu
   },
   methods: {
+    // deferLoad(e) {
+    //   e.preventDefault();
+
+    //   const deferLoading = document.querySelectorAll('[data-media-url]')
+
+    //   for (var i = deferLoading.length - 1; i >= 0; i--) {
+    //     let mediaUrl = deferLoading[i].getAttribute('data-media-url');
+    //     deferLoading[i].setAttribute('src', mediaUrl);
+    //   }
+    // },
     toggle(e) {
       e.preventDefault();
 
@@ -220,13 +256,20 @@ export default {
       targetModal.classList.remove('hide');
       targetModal.classList.add('show');
     },
+    clickHandler(e) {
+      // this.deferLoad(e);
+      this.toggle(e);
+    },
     hide(e) {
       e.preventDefault();
 
-      const target = e.target.closest('.close')
+      const target = e.target;
+      const targetParent = target.closest('.work__item-wrapper.show');
 
-      target.parentElement.parentElement.classList.remove('show');
-      target.parentElement.parentElement.classList.add('hide');
+      console.log(targetParent)
+
+      targetParent.classList.remove('show');
+      targetParent.classList.add('hide');
     }
   }
 };
