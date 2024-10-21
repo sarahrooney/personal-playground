@@ -63,6 +63,12 @@
 
   transition: opacity 0.3s ease-in;
 
+  @media (max-width: 500px) {
+    top: calc(3% + 32px);
+
+    height: 85%;
+  }
+
   &-overlay {
     position: absolute;
     top: 0;
@@ -96,7 +102,12 @@
     pointer-events: all;
 
     @media (max-width: 500px) {
-      top: 1.25%;
+      top: 3%;
+
+      height: 32px;
+
+      background: rgba($light-blue, 0.25);
+      backdrop-filter: blur(2px);
     }
 
     .close {
@@ -133,6 +144,10 @@
 
         &:nth-of-type(2) {
           transform: translate(-50%, -50%) rotate(-45deg);
+        }
+
+        @media (max-width: 500px) {
+          background: #b8d1fb;
         }
       }
     }
