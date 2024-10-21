@@ -167,8 +167,7 @@
 
   img {
     display: block;
-    width: auto;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin: 16px 0;
 
@@ -176,16 +175,28 @@
       display: inline-block;
       width: 48%;
 
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+
       &--left {
         margin-top: 8px;
         margin-bottom: 8px;
         margin-right: 2%;
+
+        @media (max-width: 500px) {
+          margin-right: 0;
+        }
       }
 
       &--right {
         margin-top: 8px;
         margin-bottom: 8px;
         margin-left: 2%;
+
+        @media (max-width: 500px) {
+          margin-left: 0;
+        }
       }
     }
   }

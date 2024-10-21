@@ -18,7 +18,7 @@
 
             <button id="daisy-bell" class="work__app" @click="toggle">
               <img 
-                src="../assets/images/work/daisybell1.png"
+                src="../assets/images/work/daisybell1.jpg"
                 alt="daisy bell" 
                 class="work__app__img">
             </button>
@@ -90,9 +90,9 @@
         <span>2018, crochet and ebook</span><br><br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="//drive.google.com/file/d/1e0Jpiy0VY_nRIMv5lNxpRv3S8MKNNMP4/view?usp=sharing" target="_blank" class="inline-link inline-link--light"><span>˗ˋ⊹link to ebook⊹ˊ˗</span></a>
       </div>
-      <img src="../assets/images/work/softcomputers_appleiie.jpg" alt="crochet of the Apple IIe computer">
-      <img src="../assets/images/work/softcomputers_booklet1.jpg" alt="Booklet pages 1 and 2">
-      <img src="../assets/images/work/softcomputers_booklet2.jpg" alt="Booklet pages 1 and 2">
+      <img src="../assets/images/work/softcomputers_appleiie.jpg" alt="crochet of the Apple IIe computer" class="half half--left">
+      <img src="../assets/images/work/softcomputers_booklet1.jpg" alt="Booklet pages 1 and 2" class="half half--right">
+      <img src="../assets/images/work/softcomputers_booklet2.jpg" alt="Booklet pages 3 and 4">
     </div>
   </dialog>
 
@@ -114,7 +114,7 @@
       </div>
       <img src="../assets/images/work/daisybellbfa.jpg" alt="Daisy Bell install">
       <br>
-      <img src="../assets/images/work/daisybell1.png" alt="Daisy Bell closeup">
+      <img src="../assets/images/work/daisybell1.jpg" alt="Daisy Bell closeup">
     </div>
   </dialog>
 
