@@ -48,7 +48,8 @@
     <div class="work__item work__item--dev">
       <div class="video" style="display:none;">
         <div class="video" style="display:none;">
-          <iframe src="https://player.vimeo.com/video/1022519821" width="1180" height="620" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Apollo Homepage"></iframe>
+          <iframe src="https://player.vimeo.com/video/1022519821?byline=false&title=false&muted=true&color=f0f8ff" width="1180" height="620" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Apollo Homepage"></iframe>
+        </div>
       </div>
     </div>
   </dialog>
@@ -63,7 +64,7 @@
     </div>
     <div class="work__item work__item--dev">
       <div class="video" style="display:none;">
-        <iframe src="https://player.vimeo.com/video/1021102022" width="1180" height="620" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Done in an R1 Scrollthrough"></iframe>
+        <iframe src="https://player.vimeo.com/video/1021102022?byline=false&title=false&muted=true&color=f0f8ff" width="1180" height="620" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Done in an R1 Scrollthrough"></iframe>
       </div>
     </div>
   </dialog>
