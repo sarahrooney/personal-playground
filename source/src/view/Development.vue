@@ -46,9 +46,9 @@
       </button>
     </div>
     <div class="work__item work__item--dev">
-      <div class="video" style="display:none;">
+      <div class="work__item__media">
         <div class="video" style="display:none;">
-          <iframe src="https://player.vimeo.com/video/1022519821?byline=false&title=false&muted=true&color=f0f8ff" width="1180" height="620" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Apollo Homepage"></iframe>
+          <iframe src="https://player.vimeo.com/video/1022519821?badge=0&amp;autopause=0&amp;byline=0&amp;loop=true&amp;title=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="apollo"></iframe>
         </div>
       </div>
     </div>
@@ -63,8 +63,10 @@
       </button>
     </div>
     <div class="work__item work__item--dev">
-      <div class="video" style="display:none;">
-        <iframe src="https://player.vimeo.com/video/1021102022?byline=false&title=false&muted=true&color=f0f8ff" width="1180" height="620" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Done in an R1 Scrollthrough"></iframe>
+      <div class="work__item__media">
+        <div class="video" style="display:none;">
+          <iframe src="https://player.vimeo.com/video/1021102022?badge=0&amp;autopause=0&amp;byline=0&amp;title=0&amp;loop=true&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="done in an r1"></iframe>
+        </div>
       </div>
     </div>
   </dialog>

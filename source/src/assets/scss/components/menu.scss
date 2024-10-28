@@ -9,7 +9,7 @@
 
     background-color: $light-blue;
 
-    @media (max-width: 500px) {
+    @media (max-width: $sm) {
       padding: 10px 0 4px
     }
 

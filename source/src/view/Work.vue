@@ -88,11 +88,29 @@
       <div class="work__item__title">
         <h2>soft computers</h2>
         <span>2018, crochet and ebook</span><br><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="//drive.google.com/file/d/1e0Jpiy0VY_nRIMv5lNxpRv3S8MKNNMP4/view?usp=sharing" target="_blank" class="inline-link inline-link--light"><span>˗ˋ⊹link to ebook⊹ˊ˗</span></a>
       </div>
-      <img src="../assets/images/work/softcomputers_appleiie.jpg" alt="crochet of the Apple IIe computer" class="half half--left">
-      <img src="../assets/images/work/softcomputers_booklet1.jpg" alt="Booklet pages 1 and 2" class="half half--right">
-      <img src="../assets/images/work/softcomputers_booklet2.jpg" alt="Booklet pages 3 and 4">
+      <div class="work__item__media">
+        <img src="../assets/images/work/softcomputers_appleiie.jpg"
+            alt="crochet of the Apple IIe computer" 
+            class="half half--left">
+        <div class="half half--right text-center d-flex flex-column justify-content-between align-item-center">
+          <div class="mt-2 mb-2">
+            ︵‿︵‿୨♡୧‿︵‿︵<br><br>
+            <a href="//drive.google.com/file/d/1e0Jpiy0VY_nRIMv5lNxpRv3S8MKNNMP4/view?usp=sharing"
+               target="_blank"
+               class="inline-link inline-link--light">
+              <span>
+                ˗ˋ⊹link to ebook⊹ˊ˗
+              </span>
+            </a>
+          </div>
+          <img src="../assets/images/work/softcomputers_booklet1.jpg" 
+              alt="Booklet pages 1 and 2">
+        </div>
+        <img src="../assets/images/work/softcomputers_booklet2.jpg"
+            alt="Booklet pages 3 and 4"
+            class="full">
+      </div>
     </div>
   </dialog>
 
@@ -109,12 +127,14 @@
         <h2>🌼🔔 (daisy bell)</h2>
         <span>2017, crochet and video</span>
       </div>
-      <div class="video">
-        <iframe src="https://player.vimeo.com/video/199761731?h=162649f3a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="DAISY BELL"></iframe>
+      <div class="work__item__media">
+        <div class="video">
+          <iframe src="https://player.vimeo.com/video/199761731?h=162649f3a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="DAISY BELL"></iframe>
+        </div>
+        <img src="../assets/images/work/daisybellbfa.jpg"
+            alt="Daisy Bell install"
+            class="full">
       </div>
-      <img src="../assets/images/work/daisybellbfa.jpg" alt="Daisy Bell install">
-      <br>
-      <img src="../assets/images/work/daisybell1.jpg" alt="Daisy Bell closeup">
     </div>
   </dialog>
 
@@ -131,7 +151,11 @@
         <h2>paintbucket (for susan kare)</h2>
         <span>2015, handwoven</span>
       </div>
-      <img src="../assets/images/work/paintbucket.jpg" alt="vertical dark pink fabric with susan kare's paintbucket icon woven into it">
+      <div class="work__item__media">
+        <img src="../assets/images/work/paintbucket.jpg"
+            alt="vertical dark pink fabric with susan kare's paintbucket icon woven within"
+            class="full">
+      </div>
     </div>
   </dialog>
 
@@ -148,8 +172,10 @@
         <h2>MIRACLE</h2>
         <span>2014</span>
       </div>
-      <div class="video video--miracle">
-        <iframe src="https://player.vimeo.com/video/119028529?h=25aceb312b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="958" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="MIRACLE"></iframe>
+      <div class="work__item__media">
+        <div class="video video--miracle">
+          <iframe src="https://player.vimeo.com/video/119028529?h=25aceb312b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="958" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="MIRACLE"></iframe>
+        </div>
       </div>
     </div>
   </dialog>
@@ -167,8 +193,10 @@
         <h2>ANIMEGIRL001</h2>
         <span>2014</span>
       </div>
-      <div class="video">
-        <iframe src="https://player.vimeo.com/video/106987342?h=25aceb312b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="958" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="ANIMEGIRL001"></iframe>
+      <div class="work__item__media">
+        <div class="video">
+          <iframe src="https://player.vimeo.com/video/106987342?h=25aceb312b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="958" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="ANIMEGIRL001"></iframe>
+        </div>
       </div>
     </div>
   </dialog>
@@ -186,7 +214,11 @@
         <h2>mainframe</h2>
         <span>2014, handwoven cotton fabric, <a href="https://www.deviantart.com/peppermint0123/art/Anime-Base-3-Girl-Using-the-Computer-440563214" target="_blank" class="inline-link inline-link--light"><span>anime base PepperMint0123@deviantart</span></a></span>
       </div>
-      <img src="../assets/images/work/mainframe.gif" alt="visuals">
+      <div class="work__item__media">
+        <img src="../assets/images/work/mainframe.gif"
+            alt="gif"
+            class="full">
+      </div>
     </div>
   </dialog>
 
@@ -203,11 +235,17 @@
         <h2>misc visuals</h2>
         <span>various years, 2018-2021. realtime video using html/css/javascript in browser</span>
       </div>
-      <div class="video">
-        <iframe src="https://player.vimeo.com/video/504464029?h=802d295110&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="12/05/2020 BITXBIT Online x CONTINUE"></iframe>
+      <div class="work__item__media">
+        <div class="video">
+          <iframe src="https://player.vimeo.com/video/504464029?h=802d295110&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="12/05/2020 BITXBIT Online x CONTINUE"></iframe>
+        </div>
+        <img src="../assets/images/work/visuals1.jpg"
+            alt="visuals" 
+            class="half half--left">
+        <img src="../assets/images/work/visuals2.jpg" 
+            alt="visuals" 
+            class="half half--right">
       </div>
-      <img src="../assets/images/work/visuals1.jpg" alt="visuals" class="half half--left">
-      <img src="../assets/images/work/visuals2.jpg" alt="visuals" class="half half--right">
     </div>
   </dialog>
 
@@ -224,7 +262,11 @@
         <h2>voices</h2>
         <span>2013, woven ethernet cables</span>
       </div>
-      <img src="../assets/images/work/voices.jpg" alt="visuals">
+      <div class="work__item__media">
+        <img src="../assets/images/work/voices.jpg" 
+            alt="woven ethernet cables, pink and white"
+            class="full">
+      </div>
     </div>
   </dialog>
 
