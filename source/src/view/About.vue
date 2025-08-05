@@ -7,7 +7,7 @@
 
       <div class="about">
         <div class="about__cntnt">
-          <h2>29/shethey/chicago</h2>
+          <h2>30/shethey/chicago</h2>
           <div class="about__cv">
             <a class="inline-link cv" href="https://docs.google.com/document/d/1xBTE-XqEK6XkJDirgz8oyHLrDkxgKjRqUS8ZSMpZAf8/edit?usp=sharing" target="_blank"><span>˗ˋ⊹CV⊹ˊ˗</span></a>
           </div>
